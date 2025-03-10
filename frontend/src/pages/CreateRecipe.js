@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "../styles/Home.css";
 
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || "https://end-4ukx.onrender.com"; // Ensure API base URL
+const API_BASE_URL = "https://end-4ukx.onrender.com"; // ✅ Direct API base URL (No .env needed)
 
 // ✅ Configure Axios globally within this file
 axios.interceptors.request.use(
@@ -56,7 +56,7 @@ function CreateRecipe() {
     };
 
     try {
-      await axios.post(`${API_BASE_URL}/recipes`, recipeData);
+      await axios.post(`${API_BASE_URL}/recipes`, recipeData); // ✅ Use direct API URL
       alert("Recipe created successfully!");
       navigate("/");
     } catch (error) {
@@ -213,4 +213,3 @@ function CreateRecipe() {
 }
 
 export default CreateRecipe;
-

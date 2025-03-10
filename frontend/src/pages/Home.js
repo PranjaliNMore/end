@@ -17,13 +17,14 @@ import "slick-carousel/slick/slick-theme.css";
 import "../App.css";
 import "../styles/Home.css";
 
+const API_BASE_URL = "https://end-4ukx.onrender.com";
 function Home() {
   const [recipes, setRecipes] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get("/api/recipes") // ✅ No need to manually add API_BASE_URL
+    axios.get(`${API_BASE_URL}/recipes`)  // ✅ No need to manually add API_BASE_URL
       .then((res) => {
         setRecipes(res.data);
       })
