@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "../styles/Home.css";
 
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || "http://localhost:5000"; // Ensure API base URL
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || "https://end-4ukx.onrender.com"; // Ensure API base URL
 
 // ✅ Configure Axios globally within this file
 axios.interceptors.request.use(
