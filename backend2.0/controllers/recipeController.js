@@ -27,7 +27,7 @@ const getMyRecipes = async (req, res) => {
 };
 
 // ✅ Create a new recipe (POST /recipes)
-const createRecipe = async (req, res) => {
+const CreateRecipe = async (req, res) => {
   try {
     const { title, description, ingredients, instructions, time, image, category } = req.body;
 
@@ -58,4 +58,4 @@ const createRecipe = async (req, res) => {
   }
 };
 
-module.exports = { getRecipes, getMyRecipes, createRecipe };
+module.exports = { getRecipes, getMyRecipes, CreateRecipe };
