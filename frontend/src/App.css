@@ -1,0 +1,174 @@
+/* Global Styles */
+body {
+  background: linear-gradient(45deg, #ffffff, #f8f8f8);
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Centered Content Container */
+.container {
+  background: rgba(250, 216, 154, 0.9); /* Soft pastel yellow */
+  padding: 20px;
+  width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: auto;
+}
+
+/* Form Box */
+.form-box {
+  background-color: #ececec; /* Light Gray */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.form-box:hover {
+  transform: scale(1.02);
+}
+
+/* Form Heading */
+.form h1 {
+  margin-bottom: 20px;
+  color: #b93e2b;
+  font-size: 24px;
+}
+
+/* Styled Input Fields */
+.input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  border: 1px solid #ff6f61;
+  box-shadow: 0px 0px 8px rgba(255, 111, 97, 0.5);
+}
+
+/* Styled Button with Gradient */
+.button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background: linear-gradient(90deg, #ff6f61, #ff8e53);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background: linear-gradient(90deg, #ff8e53, #ff6f61);
+  box-shadow: 0px 4px 10px rgba(255, 111, 97, 0.3);
+}
+
+/* Custom Navbar */
+.custom-navbar {
+  background-color: #4a4a4a; /* Dark Gray */
+  padding: 10px 20px;
+}
+
+/* Logo Styling */
+.logo .unique-logo {
+  font-family: 'Cursive', sans-serif;
+  font-size: 1.8rem;
+  color: #ff6f61;
+  letter-spacing: 2px;
+}
+
+/* Navbar Link Styling */
+.navbar .nav-link {
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+  color: white;
+}
+
+.navbar .nav-link:hover {
+  color: #ffcc00;
+}
+
+/* Override Bootstrap Dark Background */
+.bg-dark {
+  background-color: #f5d7a8 !important;
+}
+
+/* Create Recipe Page Styling */
+.create-recipe-container {
+  min-height: calc(100vh - 70px);
+  margin-top: 70px;
+  background-color: #f5d7a8;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* Form Box */
+.create-recipe-box {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Heading */
+.form-heading {
+  font-size: 1.6rem;
+  color: #b93e2b;
+  font-weight: bold;
+}
+
+/* Submit Button */
+.create-btn {
+  background-color: #b93e2b;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+  color: white;
+}
+
+.create-btn:hover {
+  background-color: #9f3424;
+  box-shadow: 0px 4px 10px rgba(185, 62, 43, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .create-recipe-box {
+    padding: 20px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .create-recipe-container {
+    padding: 15px;
+  }
+
+  .create-recipe-box {
+    padding: 15px;
+  }
+}

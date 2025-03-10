@@ -1,0 +1,125 @@
+/* Sticky Search & Category Bar */
+.search-category-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 15px 20px;
+  position: sticky;
+  top: 60px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Bar */
+.search-bar {
+  width: 100%;
+  max-width: 600px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ff6f61;
+  border-radius: 20px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-input:focus {
+  border-color: #b93e2b;
+}
+
+/* Category Buttons */
+.category-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.category-button {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.3s;
+  color: white;
+  font-weight: bold;
+}
+
+/* Colorful Buttons */
+.category-button:nth-child(1) { background: #ff6f61; } /* All */
+.category-button:nth-child(2) { background: #ffb347; } /* Breakfast */
+.category-button:nth-child(3) { background: #6bcf72; } /* Lunch */
+.category-button:nth-child(4) { background: #5b9bd5; } /* Dinner */
+.category-button:nth-child(5) { background: #d35b9d; } /* Desserts */
+
+.category-button:hover {
+  opacity: 0.8;
+}
+
+.category-button.active {
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  background: url("../styles/food.avif") center/cover no-repeat;
+  padding: 100px 20px;
+  color:#FFD700;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  color: #8A2BE2;
+}
+
+.hero-section .highlight {
+  color: #da46e7;
+}
+
+.cta-button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #ff8e53;
+}
+
+/* Recipe List */
+.recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.recipe-card {
+  background: #a24040;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 50px 15px;
+  }
+  
+  .search-input {
+    width: 80%;
+  }
+}
+
