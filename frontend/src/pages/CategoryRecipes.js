@@ -25,7 +25,7 @@ function CategoryPage() {
   useEffect(() => {
     const fetchCategoryRecipes = async () => {
       try {
-        const res = await axios.get(`${API_BASE_URL}/api/recipes/category/${category}`);
+        const res = await axios.get(`${API_BASE_URL}/recipes/category/${category}`);
         setRecipes(res.data);
       } catch (err) {
         console.error("Error fetching category recipes:", err);
